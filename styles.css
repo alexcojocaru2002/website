@@ -996,3 +996,14 @@ html {
         color: black;
     }
 }
+
+
+
+.company-logo {
+  width: 200px;           /* tweak to 18–20px if you want it a bit larger */
+  height: 20px;          /* keep square for logos */
+  margin-left: 1px;
+  vertical-align: middle;
+  object-fit: contain;   /* keeps aspect ratio */
+  image-rendering: auto; /* looks nicer for small PNGs */
+}
