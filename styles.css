@@ -621,7 +621,8 @@ a:hover {
 .company-logo-wrap {
     display: flex;
     align-items: center;
-    height: 2.25rem;
+    justify-content: center;
+    height: 3rem;
     margin-bottom: var(--spacing-xs);
 }
 
@@ -1060,7 +1061,7 @@ html {
     display: block;
     width: auto;
     max-width: min(12rem, 100%);
-    height: 2rem;
+    height: 2.5rem;
     object-fit: contain;
-    object-position: left center;
+    object-position: center;
 }
