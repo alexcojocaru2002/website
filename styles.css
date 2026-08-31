@@ -618,6 +618,13 @@ a:hover {
     margin-bottom: var(--spacing-xs);
 }
 
+.company-logo-wrap {
+    display: flex;
+    align-items: center;
+    height: 2.25rem;
+    margin-bottom: var(--spacing-xs);
+}
+
 .experience-header .date {
     color: var(--color-text-secondary);
     font-size: var(--font-size-sm);
@@ -824,6 +831,56 @@ a:hover {
     text-align: center;
 }
 
+/* ML blog */
+.blog-page {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 88px);
+    padding: calc(var(--spacing-3xl) + 2rem) 0 var(--spacing-3xl);
+    background: linear-gradient(135deg, var(--color-background), var(--color-sage-light));
+}
+
+.blog-content {
+    max-width: 760px;
+    text-align: center;
+}
+
+.blog-kicker {
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-primary);
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.blog-content h1 {
+    margin-bottom: var(--spacing-md);
+}
+
+.blog-intro {
+    max-width: 620px;
+    margin: 0 auto var(--spacing-xl);
+    font-size: var(--font-size-lg);
+}
+
+.blog-empty-state {
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-xl);
+    background: var(--color-surface);
+    box-shadow: var(--shadow-md);
+}
+
+.blog-empty-state > i {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+    font-size: var(--font-size-3xl);
+}
+
+.blog-empty-state p {
+    margin-bottom: var(--spacing-lg);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
@@ -1000,10 +1057,10 @@ html {
 
 
 .company-logo {
-  width: 200px;           /* tweak to 18–20px if you want it a bit larger */
-  height: 20px;          /* keep square for logos */
-  margin-left: 1px;
-  vertical-align: middle;
-  object-fit: contain;   /* keeps aspect ratio */
-  image-rendering: auto; /* looks nicer for small PNGs */
+    display: block;
+    width: auto;
+    max-width: min(12rem, 100%);
+    height: 2rem;
+    object-fit: contain;
+    object-position: left center;
 }
