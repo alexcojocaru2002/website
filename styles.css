@@ -127,18 +127,18 @@ h3 {
 }
 
 .intro {
-    padding-block: 6.5rem 5rem;
+    padding-block: 3rem;
 }
 
 .eyebrow {
-    margin-bottom: 1.75rem;
+    margin-bottom: 0.75rem;
     color: var(--secondary);
 }
 
 .intro h1 {
-    font-size: clamp(4rem, 8.5vw, 7.25rem);
-    line-height: 0.98;
-    letter-spacing: -0.065em;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.045em;
 }
 
 .intro-bottom {
@@ -146,7 +146,7 @@ h3 {
     align-items: flex-end;
     justify-content: space-between;
     gap: 2rem;
-    margin-top: 3rem;
+    margin-top: 1.25rem;
 }
 
 .intro-description {
@@ -362,18 +362,14 @@ h3 {
     }
 
     .intro {
-        padding-block: 4rem 3rem;
-    }
-
-    .intro h1 {
-        font-size: clamp(3rem, 12vw, 4.75rem);
+        padding-block: 2rem;
     }
 
     .intro-bottom {
         align-items: flex-start;
         flex-direction: column;
-        gap: 1.5rem;
-        margin-top: 2rem;
+        gap: 1rem;
+        margin-top: 1rem;
     }
 
     .intro-description {
@@ -434,7 +430,7 @@ h3 {
     }
 
     .intro h1 {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
     .section {
