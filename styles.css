@@ -1,8 +1,8 @@
 :root {
     color-scheme: light;
     --background: #fff;
-    --text: #111;
-    --secondary: #595959;
+    --text: #000;
+    --secondary: var(--text);
     --rule: #e5e5e5;
     --font: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
 }
@@ -17,7 +17,15 @@ html {
 
 body {
     margin: 0;
-    background: var(--background);
+    background-color: var(--background);
+    background-image:
+        linear-gradient(115deg,
+            transparent 28%,
+            rgb(255 255 255 / 90%) 43%,
+            #fff 48%,
+            transparent 64%),
+        linear-gradient(135deg, #fff 12%, #f2f2f2 48%, #fff 82%);
+    background-attachment: fixed;
     color: var(--text);
     font-family: var(--font);
     font-size: 1rem;
@@ -27,8 +35,8 @@ body {
 }
 
 ::selection {
-    background: var(--text);
-    color: var(--background);
+    background: #e5e5e5;
+    color: var(--text);
 }
 
 a {
@@ -70,8 +78,9 @@ h3 {
     left: 1rem;
     z-index: 1;
     padding: 0.5rem 1rem;
-    background: var(--text);
-    color: var(--background);
+    background: var(--background);
+    color: var(--text);
+    border: 1px solid var(--text);
     transform: translateY(calc(-100% - 2rem));
 }
 
@@ -154,7 +163,7 @@ h3 {
 
 .text-link {
     text-decoration-line: underline;
-    text-decoration-color: #a3a3a3;
+    text-decoration-color: currentColor;
 }
 
 .text-link:hover {
@@ -406,6 +415,10 @@ h3 {
 }
 
 @media print {
+    body {
+        background: var(--background);
+    }
+
     .page {
         width: 100%;
     }
